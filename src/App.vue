@@ -171,6 +171,7 @@ h3 {
 
 .personInfo__photo {
   margin: 0 15px 15px 0;
+  z-index: 5;
 }
 
 .avatar_full {
@@ -191,8 +192,11 @@ h3 {
   background-color: #FFFBC8;
   border: 1px solid #DADADA;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 10px 10px 20%;
   margin: 0 0 10px 0;
+  width: 120%;
+  float: right;
+  text-align: right;
 }
 
 .personInfo__services__header {
@@ -328,6 +332,13 @@ h3 {
 @media (max-width: 425px) {
   .personInfo {
     flex-wrap: wrap;
+  }
+
+  .personInfo__title {
+    text-align: left;
+    float: left;
+    width: 100%;
+    padding: 10px;
   }
 
   .reviews__header {
